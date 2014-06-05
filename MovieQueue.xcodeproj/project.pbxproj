@@ -22,6 +22,10 @@
 		D8501B8A1940108300BB05F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8501B6E1940108300BB05F0 /* CoreData.framework */; };
 		D8501B921940108300BB05F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8501B901940108300BB05F0 /* InfoPlist.strings */; };
 		D8501B941940108300BB05F0 /* MovieQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8501B931940108300BB05F0 /* MovieQueueTests.m */; };
+		D8501BA01940111200BB05F0 /* MovieQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8501B9E1940111200BB05F0 /* MovieQueueViewController.m */; };
+		D8501BA11940111200BB05F0 /* MovieQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8501B9F1940111200BB05F0 /* MovieQueueViewController.xib */; };
+		D8501BAD1940C55900BB05F0 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8501BAB1940C55900BB05F0 /* MovieTableViewCell.m */; };
+		D8501BAE1940C55900BB05F0 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8501BAC1940C55900BB05F0 /* MovieTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		D8501B8F1940108300BB05F0 /* MovieQueueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovieQueueTests-Info.plist"; sourceTree = "<group>"; };
 		D8501B911940108300BB05F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8501B931940108300BB05F0 /* MovieQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieQueueTests.m; sourceTree = "<group>"; };
+		D8501B9D1940111200BB05F0 /* MovieQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieQueueViewController.h; sourceTree = "<group>"; };
+		D8501B9E1940111200BB05F0 /* MovieQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieQueueViewController.m; sourceTree = "<group>"; };
+		D8501B9F1940111200BB05F0 /* MovieQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieQueueViewController.xib; sourceTree = "<group>"; };
+		D8501BAA1940C55900BB05F0 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		D8501BAB1940C55900BB05F0 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+		D8501BAC1940C55900BB05F0 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,12 @@
 		D8501B5C1940108300BB05F0 = {
 			isa = PBXGroup;
 			children = (
+				D8501BAA1940C55900BB05F0 /* MovieTableViewCell.h */,
+				D8501BAB1940C55900BB05F0 /* MovieTableViewCell.m */,
+				D8501BAC1940C55900BB05F0 /* MovieTableViewCell.xib */,
+				D8501B9D1940111200BB05F0 /* MovieQueueViewController.h */,
+				D8501B9E1940111200BB05F0 /* MovieQueueViewController.m */,
+				D8501B9F1940111200BB05F0 /* MovieQueueViewController.xib */,
 				D8501B701940108300BB05F0 /* MovieQueue */,
 				D8501B8D1940108300BB05F0 /* MovieQueueTests */,
 				D8501B671940108300BB05F0 /* Frameworks */,
@@ -229,7 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8501BA11940111200BB05F0 /* MovieQueueViewController.xib in Resources */,
 				D8501B751940108300BB05F0 /* InfoPlist.strings in Resources */,
+				D8501BAE1940C55900BB05F0 /* MovieTableViewCell.xib in Resources */,
 				D8501B801940108300BB05F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8501B771940108300BB05F0 /* main.m in Sources */,
+				D8501BA01940111200BB05F0 /* MovieQueueViewController.m in Sources */,
 				D8501B7E1940108300BB05F0 /* MovieQueue.xcdatamodeld in Sources */,
+				D8501BAD1940C55900BB05F0 /* MovieTableViewCell.m in Sources */,
 				D8501B7B1940108300BB05F0 /* MovieQueueAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
