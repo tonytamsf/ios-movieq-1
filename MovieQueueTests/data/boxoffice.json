@@ -1,5 +1,4 @@
 {
-   "link_template" : "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?limit={num-results}&country={country-code}",
    "movies" : [
       {
          "release_dates" : {
@@ -731,9 +730,5 @@
          "year" : 2013,
          "critics_consensus" : "47 Ronin is a surprisingly dull fantasy adventure, one that leaves its talented international cast stranded within one dimensional roles."
       }
-   ],
-   "links" : {
-      "self" : "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?limit=10&country=us",
-      "alternate" : "http://www.rottentomatoes.com/dvd/top_rentals"
-   }
+   ]
 }
