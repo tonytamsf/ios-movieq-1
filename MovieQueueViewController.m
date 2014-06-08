@@ -8,6 +8,7 @@
 
 #import "MovieQueueViewController.h"
 #import "MovieTableViewCell.h"
+#import "Movie.h"
 
 @interface MovieQueueViewController ()
 
@@ -41,7 +42,7 @@
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                                id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                NSLog(@"%@", object);
-                               self.movies = object[@"movies"];
+                               self.movies = [Movie moviesWithArray:object[@"movies"]];
                                [self.movieListTableView reloadData];
                            } ];
     
@@ -49,7 +50,6 @@
                                           nibWithNibName:@"MovieTableViewCell" bundle:nil]
                   forCellReuseIdentifier:@"MovieTableViewCell"];
     self.movieListTableView.rowHeight = 150;
-    
 }
 - (void)didReceiveMemoryWarning
 {
@@ -67,13 +67,13 @@
     
     MovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieTableViewCell"];
     
-    NSDictionary *movie = self.movies[indexPath.row];
+    Movie *movie = self.movies[indexPath.row];
     //if (! movie ) { return nil; }
-    NSLog(@"movie %@", movie[@"title"]);
-    NSLog(@"movie %@", movie[@"synopsis"]);
+    NSLog(@"movie %@", movie.title);
+    NSLog(@"movie %@", movie.synopsis);
 
-    cell.movieTitleLabel.text = movie[@"title"];
-    cell.synopsisLabel.text = movie[@"synopsis"];
+    cell.movieTitleLabel.text = movie.title;
+    cell.synopsisLabel.text = movie.synopsis;
     return cell;
 }
 

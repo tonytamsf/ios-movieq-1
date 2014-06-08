@@ -1,4 +1,0 @@
-ios-movieq
-==========
-
-Movie Q

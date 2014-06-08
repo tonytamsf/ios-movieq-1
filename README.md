@@ -1,8 +1,13 @@
-ios-movieq
-==========
+## Movie Q
 
-Movie Q
+### Notes
 
-Notes
-======
 `gem install cocoapods --pre`
+
+### TODO
+* handle network problems
+```
+{
+error: "Gateway Timeout"
+}
+```
