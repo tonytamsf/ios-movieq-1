@@ -26,7 +26,6 @@
 		D8501BA11940111200BB05F0 /* MovieQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8501B9F1940111200BB05F0 /* MovieQueueViewController.xib */; };
 		D8501BAD1940C55900BB05F0 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8501BAB1940C55900BB05F0 /* MovieTableViewCell.m */; };
 		D8501BAE1940C55900BB05F0 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8501BAC1940C55900BB05F0 /* MovieTableViewCell.xib */; };
-		D8A4D1251941714E00681BB0 /* boxoffice.json in Resources */ = {isa = PBXBuildFile; fileRef = D8A4D1241941714E00681BB0 /* boxoffice.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		D8501BAA1940C55900BB05F0 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
 		D8501BAB1940C55900BB05F0 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
 		D8501BAC1940C55900BB05F0 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
-		D8A4D1241941714E00681BB0 /* boxoffice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boxoffice.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +143,6 @@
 		D8501B711940108300BB05F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8A4D1241941714E00681BB0 /* boxoffice.json */,
 				D8501B721940108300BB05F0 /* MovieQueue-Info.plist */,
 				D8501B731940108300BB05F0 /* InfoPlist.strings */,
 				D8501B761940108300BB05F0 /* main.m */,
@@ -248,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A4D1251941714E00681BB0 /* boxoffice.json in Resources */,
 				D8501BA11940111200BB05F0 /* MovieQueueViewController.xib in Resources */,
 				D8501B751940108300BB05F0 /* InfoPlist.strings in Resources */,
 				D8501BAE1940C55900BB05F0 /* MovieTableViewCell.xib in Resources */,
@@ -474,7 +470,6 @@
 				D8501B991940108300BB05F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		D8501B9A1940108300BB05F0 /* Build configuration list for PBXNativeTarget "MovieQueueTests" */ = {
 			isa = XCConfigurationList;
@@ -483,7 +478,6 @@
 				D8501B9C1940108300BB05F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
