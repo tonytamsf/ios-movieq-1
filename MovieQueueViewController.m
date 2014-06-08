@@ -33,6 +33,8 @@
     self.movieListTableView.dataSource = self;
     
     NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=t7anbdt8gp32yvw33cs92zkg&limit=10";
+    //NSString *url = @"/tmp/api.json";
+
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
@@ -46,6 +48,7 @@
     [self.movieListTableView registerNib:[UINib
                                           nibWithNibName:@"MovieTableViewCell" bundle:nil]
                   forCellReuseIdentifier:@"MovieTableViewCell"];
+    self.movieListTableView.rowHeight = 150;
     
 }
 - (void)didReceiveMemoryWarning
